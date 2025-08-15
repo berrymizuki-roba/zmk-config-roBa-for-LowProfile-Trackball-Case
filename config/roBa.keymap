@@ -83,7 +83,7 @@
 &kp Q      &kp W  &kp E   &kp R          &kp T                                     &kp LS(F1)    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9    &lt 1 K_CALCULATOR
 &kp TAB    &kp A  &kp S   &kp D          &kp F        &trans        &kp F9         &kp END       &kp NUMBER_4  &kp NUMBER_5  &lt 6 NUMBER_6  &kp F8
 &kp LCTRL  &kp Z  &kp X   &kp C          &kp V        &mkp MB1      &kp BACKSPACE  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3    &kp DOT
-&tog 0     &to 5  &tog 2  &lt 3 LS(TAB)  &lt 2 SPACE  &to 0         &kp ENTER      &lt 3 TAB                                                 &kp LS(LC(F2))
+&tog 2     &to 1  &tog 5  &lt 3 LS(TAB)  &lt 2 SPACE  &to 0         &kp ENTER      &lt 3 TAB                                                 &kp LS(LC(F2))
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -92,9 +92,9 @@
         FUNCTION {
             bindings = <
 &kp DLLR  &kp AMPS  &kp LPAR  &kp RPAR  &kp EQUAL                            &kp LC(HOME)   &kp F7  &kp F8  &kp F9  &trans
-&trans    &trans    &kp LBRC  &kp RBRC  &kp DQT    &trans      &kp F11       &kp LC(END)    &kp F4  &kp F5  &kp F6  &kp F10
-&trans    &kp LBKT  &kp LT    &kp GT    &kp SQT    &trans      &kp F12       &kp F10        &kp F1  &kp F2  &kp F3  &kp F11
-&trans    &trans    &trans    &trans    &trans     &trans      &kp LC(LEFT)  &kp LC(RIGHT)                          &kp F12
+&trans    &trans    &kp LBRC  &kp RBRC  &kp DQT    &trans      &kp F11       &kp LC(END)    &kp F4  &kp F5  &kp F6  &trans
+&trans    &kp LBKT  &kp LT    &kp GT    &kp SQT    &trans      &kp F12       &kp F10        &kp F1  &kp F2  &kp F3  &trans
+&trans    &trans    &trans    &trans    &trans     &trans      &kp LC(LEFT)  &kp LC(RIGHT)                          &trans
             >;
         };
 
@@ -142,6 +142,15 @@
 &trans  &trans        &trans        &trans        &trans  &trans           &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &trans  &bootloader      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans        &trans        &trans        &trans  &trans           &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        layer_7 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
         };
     };
