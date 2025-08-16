@@ -105,10 +105,10 @@
 
         default_layer {
             bindings = <
-&kp LS(F1)  &kp W     &kp E      &kp R                  &kp T                                                &kp Y      &kp U  &kp I  &kp O      &lt 1 P
-&kp LSHIFT  &kp A     &kp S      &kp D                  &kp F      &trans                     &to 3          &kp G      &kp H  &kp K  &kp L      &kp MINUS
-&kp LCTRL   &kp UP    &kp Z      &kp C                  &kp V      &kp X                      &kp BACKSPACE  &kp B      &kp N  &kp M  &kp COMMA  &lt 5 PERIOD
-&kp LEFT    &kp DOWN  &kp RIGHT  &lt_to_layer_0 2 INT4  &kp SPACE  &lt_to_layer_0 6 INT5      &to 0          &kp ENTER                           &kp J
+&kp LS(F1)  &kp W     &kp E      &kp R                  &kp T                                                &kp Y      &kp U  &kp I  &kp O  &lt 1 P
+&kp LSHIFT  &kp A     &kp S      &kp D                  &kp F      &trans                     &kp COMMA      &kp G      &kp H  &kp K  &kp L  &lt 5 MINUS
+&kp LCTRL   &kp UP    &kp Z      &kp C                  &kp V      &kp X                      &kp PERIOD     &kp B      &kp N  &kp M  &kp J  &lt 2 TAB
+&kp LEFT    &kp DOWN  &kp RIGHT  &lt_to_layer_0 2 INT4  &kp SPACE  &lt_to_layer_0 6 INT5      &kp BACKSPACE  &kp ENTER                       &tog 3
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -128,7 +128,7 @@
 &kp Q           &trans           &kp ESC          &trans      &trans                         &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LA(F4)
 &kp LSHIFT      &mmv MOVE_RIGHT  &trans           &kp K_CALC  &trans  &trans      &kp SLASH  &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
 &kp LCTRL       &mmv MOVE_UP     &mkp MB1         &trans      &trans  &trans      &kp MINUS  &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT
-&mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans      &trans  &trans      &trans     &trans                                               &trans
+&mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans      &trans  &trans      &trans     &trans                                               &kp J
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -136,10 +136,10 @@
 
         NUM {
             bindings = <
-&kp LS(F1)  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_VOLUME_UP  &kp C_AC_HOME                                   &kp TAB    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &lt 1 LA(F4)
-&kp LSHIFT  &kp EQUAL         &kp PLUS    &kp K_CALC       &kp C_VOLUME_DOWN  &trans        &kp F9         &kp END    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
-&kp LCTRL   &kp UP            &kp ASTRK   &kp MINUS        &kp SLASH          &kp F5        &kp BACKSPACE  &kp F8     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &lt 5 DOT
-&kp LEFT    &kp DOWN          &kp RIGHT   &kp INT4         &kp SPACE          &kp INT5      &to 0          &kp ENTER                                            &kp LS(LC(F2))
+&kp LS(F1)  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_VOLUME_UP  &kp C_AC_HOME                                   &kp TAB    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &lt 1 F8
+&kp LSHIFT  &kp EQUAL         &kp PLUS    &kp K_CALC       &kp C_VOLUME_DOWN  &trans        &to 0          &kp F5     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+&kp LCTRL   &kp UP            &kp ASTRK   &kp C            &kp SLASH          &kp X         &kp F9         &kp END    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &lt 5 DOT
+&kp LEFT    &kp DOWN          &kp RIGHT   &kp INT4         &kp SPACE          &kp INT5      &kp BACKSPACE  &kp ENTER                                            &kp LS(LC(F2))
             >;
         };
 
