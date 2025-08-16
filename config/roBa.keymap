@@ -56,17 +56,17 @@
 
         mizuki_original2 {
             bindings = <&kp PAGE_UP>;
-            key-positions = <7 8>;
+            key-positions = <7 8 6>;
         };
 
         mizuki_original3 {
             bindings = <&kp PAGE_DOWN>;
-            key-positions = <19 20>;
+            key-positions = <19 20 18>;
         };
 
         mizuki_original4 {
             bindings = <&kp LA(F4)>;
-            key-positions = <8 9>;
+            key-positions = <8 9 7>;
         };
 
         mizuki_original5 {
