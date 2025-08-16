@@ -31,17 +31,12 @@
 
         tab {
             bindings = <&kp TAB>;
-            key-positions = <11 12>;
-        };
-
-        shift_tab {
-            bindings = <&kp LS(TAB)>;
-            key-positions = <12 13>;
+            key-positions = <0 1>;
         };
 
         muhennkann {
             bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+            key-positions = <37 36>;
         };
 
         double_quotation {
@@ -52,6 +47,36 @@
         eq {
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
+        };
+
+        mizuki_original {
+            bindings = <&kp LG(D)>;
+            key-positions = <31 32>;
+        };
+
+        mizuki_original2 {
+            bindings = <&kp PAGE_UP>;
+            key-positions = <7 8>;
+        };
+
+        mizuki_original3 {
+            bindings = <&kp PAGE_DOWN>;
+            key-positions = <19 20>;
+        };
+
+        mizuki_original4 {
+            bindings = <&kp LA(F4)>;
+            key-positions = <8 9>;
+        };
+
+        mizuki_original5 {
+            bindings = <&kp TAB>;
+            key-positions = <5 6>;
+        };
+
+        mizuki_original7 {
+            bindings = <&kp LS(F2)>;
+            key-positions = <10 11>;
         };
     };
 
@@ -80,10 +105,10 @@
 
         default_layer {
             bindings = <
-&lt 2 Q   &kp W       &kp E  &kp R                  &kp T                                          &kp Y        &kp U  &kp I  &kp O      &kp P
-&kp LEFT  &kp RIGHT   &kp A  &kp S                  &kp D        &trans                     &kp F  &kp G        &kp H  &kp K  &kp L      &kp ENTER
-&kp UP    &kp LSHIFT  &kp Z  &kp C                  &kp V        &kp MINUS                  &kp J  &kp B        &kp N  &kp M  &kp COMMA  &kp PERIOD
-&kp DOWN  &kp LCTRL   &kp X  &lt_to_layer_0 6 INT4  &lt 3 SPACE  &lt_to_layer_0 2 INT5      &to 0  &lt 1 ENTER                           &kp BACKSPACE
+&kp LS(F1)  &kp W     &kp E      &kp R                  &kp T                                                &kp Y      &kp U  &kp I  &kp O      &lt 1 P
+&kp LSHIFT  &kp A     &kp S      &kp D                  &kp F      &trans                     &to 3          &kp G      &kp H  &kp K  &kp L      &kp MINUS
+&kp LCTRL   &kp UP    &kp Z      &kp C                  &kp V      &kp X                      &kp BACKSPACE  &kp B      &kp N  &kp M  &kp COMMA  &lt 5 PERIOD
+&kp LEFT    &kp DOWN  &kp RIGHT  &lt_to_layer_0 2 INT4  &kp SPACE  &lt_to_layer_0 6 INT5      &to 0          &kp ENTER                           &kp J
             >;
 
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
@@ -91,19 +116,19 @@
 
         FUNCTION {
             bindings = <
-&kp DLLR  &kp AMPS  &kp LPAR  &kp RPAR  &kp EQUAL                            &kp LC(HOME)   &kp F7  &kp F8  &kp F9  &trans
-&trans    &trans    &kp LBRC  &kp RBRC  &kp DQT    &trans      &kp F11       &kp LC(END)    &kp F4  &kp F5  &kp F6  &trans
-&trans    &kp LBKT  &kp LT    &kp GT    &kp SQT    &trans      &kp F12       &kp F10        &kp F1  &kp F2  &kp F3  &trans
-&trans    &to 0     &trans    &trans    &trans     &trans      &kp LC(LEFT)  &kp LC(RIGHT)                          &trans
+&kp Q       &kp AMPS  &kp LPAR   &kp RPAR  &kp EQUAL                      &kp F10  &kp F7  &kp F8  &kp F9  &trans
+&kp LSHIFT  &trans    &kp LBRC   &kp RBRC  &kp DQT    &trans      &trans  &kp F11  &kp F4  &kp F5  &kp F6  &trans
+&kp LCTRL   &kp UP    &kp SQT    &kp DLLR  &kp SQT    &trans      &trans  &kp F12  &kp F1  &kp F2  &kp F3  &trans
+&kp LEFT    &kp DOWN  &kp RIGHT  &trans    &trans     &trans      &trans  &trans                           &trans
             >;
         };
 
         ARROW {
             bindings = <
-&trans          &kp LA(F4)       &kp ESC   &trans  &trans                      &trans  &trans          &mmv MOVE_UP    &trans           &kp LA(F4)
-&mmv MOVE_LEFT  &mmv MOVE_RIGHT  &trans    &trans  &trans  &trans      &trans  &trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans
-&mmv MOVE_UP    &kp PAGE_UP      &kp HOME  &trans  &trans  &trans      &trans  &trans  &trans          &trans          &trans           &trans
-&mmv MOVE_DOWN  &kp PAGE_DOWN    &kp END   &trans  &trans  &trans      &trans  &trans                                                   &trans
+&kp Q           &trans           &kp ESC          &trans      &trans                         &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LA(F4)
+&kp LSHIFT      &mmv MOVE_RIGHT  &trans           &kp K_CALC  &trans  &trans      &kp SLASH  &kp ASTRK  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+&kp LCTRL       &mmv MOVE_UP     &mkp MB1         &trans      &trans  &trans      &kp MINUS  &kp PLUS   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT
+&mmv MOVE_DOWN  &mmv MOVE_DOWN   &mmv MOVE_RIGHT  &trans      &trans  &trans      &trans     &trans                                               &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
@@ -111,28 +136,28 @@
 
         NUM {
             bindings = <
-&kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp C_AC_HOME                         &kp EQUAL  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LA(F4)
-&trans            &trans      &trans        &trans           &kp C_AL_MAIL  &trans      &kp MINUS  &kp PLUS   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
-&trans            &trans      &trans        &trans           &trans         &trans      &kp SLASH  &kp ASTRK  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp DOT
-&trans            &trans      &trans        &kp LSHIFT       &trans         &trans      &trans     &to 0                                                &kp LS(F2)
+&kp LS(F1)  &kp K_PLAY_PAUSE  &kp K_MUTE  &kp C_VOLUME_UP  &kp C_AC_HOME                                   &kp TAB    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &lt 1 LA(F4)
+&kp LSHIFT  &kp EQUAL         &kp PLUS    &kp K_CALC       &kp C_VOLUME_DOWN  &trans        &kp F9         &kp END    &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0
+&kp LCTRL   &kp UP            &kp ASTRK   &kp MINUS        &kp SLASH          &kp F5        &kp BACKSPACE  &kp F8     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &lt 5 DOT
+&kp LEFT    &kp DOWN          &kp RIGHT   &kp INT4         &kp SPACE          &kp INT5      &to 0          &kp ENTER                                            &kp LS(LC(F2))
             >;
         };
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans           &trans      &trans     &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(LS(TAB))  &mkp MB1    &mkp MB3   &mkp MB2  &kp LC(TAB)
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &kp LA(F4)  &kp LG(D)  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                            &trans
+&trans  &trans  &trans  &trans  &trans                      &kp LS(F1)       &trans    &trans     &trans    &kp LA(F4)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LC(LS(TAB))  &mkp MB1  &mkp MB3   &mkp MB2  &kp LC(TAB)
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans           &trans    &kp LG(D)  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                          &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&kp Q    &kp W     &kp E      &kp R       &kp T                                              &kp Y   &kp U  &kp I      &kp O       &kp P
-&kp A    &kp S     &kp D      &kp F       &kp G                &trans         &kp MINUS      &kp H   &kp J  &kp K      &kp L       &kp ENTER
-&kp Z    &kp X     &kp C      &kp V       &kp B                &kp SPACE      &kp BACKSPACE  &kp N   &kp M  &kp COMMA  &kp PERIOD  &kp UP
-&kp TAB  &kp LEFT  &kp RIGHT  &kp LSHIFT  &kp INTERNATIONAL_4  &kp INT5       &to 0          &trans                                &kp DOWN
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9       &kp NUMBER_0
+&kp LSHIFT    &kp EQUAL     &kp PLUS      &kp DLLR      &kp PRCNT     &trans         &kp AT    &kp LBRC      &kp RBRC      &kp LPAR      &kp RPAR           &kp UNDERSCORE
+&kp LCTRL     &kp UP        &kp ASTRK     &kp MINUS     &kp SLASH     &kp QMARK      &kp EXCL  &kp COLON     &kp SEMI      &kp LBKT      &kp RIGHT_BRACKET  &kp UP
+&kp LEFT      &kp DOWN      &kp RIGHT     &kp INT4      &kp SPACE     &kp INT5       &to 0     &trans                                                       &kp DOWN
             >;
         };
 
